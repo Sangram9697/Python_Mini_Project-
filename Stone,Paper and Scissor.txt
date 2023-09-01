@@ -1,0 +1,23 @@
+print("~~~~~~~~~~~~~Game of Rock,Paper and Scissors~~~~~~~~~~~~~~~~")
+import random
+#To import random module.
+options=("rock","paper", "scissors")
+player = None
+computer = random.choice (options)
+#To take random choice from computer
+while player not in options:
+      player = input("Enter a choice (rock, paper, scissors): ")
+#To print Player and Computer choice
+print(f"Player: {player}")
+print (f"Computer: {computer}")
+#To check who is the winner
+if player== computer:
+    print("It's a tie!")
+elif player=="rock" and computer=="scissors":
+    print("You Win!")
+elif player=="paper" and computer=="rock":
+    print("You Win!")
+elif player=="scissors" and computer=="paper":
+    print("You Win!")
+else:
+    print("You Lose!")
